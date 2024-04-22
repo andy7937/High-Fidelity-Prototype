@@ -11,57 +11,17 @@
             background: rgba(165, 199, 70, 0.20); /* very light green */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .brand-button {
-            background-color: #C7B446;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .brand-button:hover {
-            background-color: #b6a237; /* Slightly darker shade for hover state */
-        }
-        .header-content {
-            display: flex;
-            align-items: center;
-            padding: 70px;
-        }
-        .header-logo {
-            height: 80px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
         .content-container {
             display: flex;
             justify-content: space-between; 
+            margin-left: 300px; /* Sidebar width */
         }
-
         .left-content, .right-content {
             flex: 1;  /* Makes both divs take up equal space */
             padding: 20px;
             background: rgba(255, 255, 255, 0.4); /* Adjusts the transparency with RGBA */
             margin: 60px; /* Adds margin around the content boxes */
         }
-
-        /* registration link */
-        nav {
-            margin-left: auto; /* Pushes the nav to the right */
-        }
-        nav a {
-            color: #494949; /* Brand color for links */
-            text-decoration: none;
-            padding: 8px 16px;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #494949; /* Slightly darker shade for hover state */
-            background-color: #C7B446;
-        }
-
-        
         .full-width-image {
             width: 100%;
             height: auto;
@@ -81,17 +41,34 @@
 
     </style>
 </head>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+    <div class="w3-container">
+        <div style="display: flex; align-items: center;">
+            <h3 class="w3-xxxlarge w3-text-white"><b>FREE</b></h3>
+            <img src="freecycle-logo-no-word.png" style="max-width: 45%; margin-left: 10px;">
+        </div>
+        <h3 class="w3-xxxlarge w3-text-white" style="text-align: left;"><b>CYCLING</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Login</b></a>
+        <a href="#" id="trigger-modal" class="w3-bar-item w3-button w3-hover-white"><b>Register</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Home</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>About Our Company</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Our Team</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Help and FAQ</b></a>
+    </div>
+</nav>
+
+<!-- Main content page -->
 <body>
-    <header class="w3-container header-content">
-        <img src="freecycle-logo.png" alt="Freecycling Logo" class="header-logo">
-        <nav>
-            <a href="#" id="trigger-modal">Register</a>
-        </nav>
-    </header>
+    <!-- Image -->
     <main class="w3-container-image">
         <img src="naturewalk.jpg" alt="Example of Freecycling" class="full-width-image">
     </main>
 
+    <!-- 2 boxes content -->
     <div class="content-container">
         <div class="w3-container left-content">
             <h2>Welcome to Freecycling!</h2>
