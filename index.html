@@ -16,6 +16,10 @@
             justify-content: space-between; 
             margin-left: 300px; /* Sidebar width */
         }
+        .brand-button {
+            background-color: #C7B446; /* Brand color for button */
+            color: #fff; /* White text for contrast */
+        }
         .left-content, .right-content {
             flex: 1;  /* Makes both divs take up equal space */
             padding: 20px;
@@ -34,25 +38,50 @@
             color: #C7B446; /* Brand color for heading */
         }
         
-        /* Sidebar styling */
+        /* Sidebar container styling with flex display */
         nav.w3-sidebar {
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            justify-content: space-between; /* Space between top and bottom content */
+            height: 100vh; /* Full height of the viewport */
             background-color: #333333; /* Dark grey background */
             z-index: 3;
             width: 300px;
             font-weight: bold;
+            overflow: auto; /* Allows scrolling */
         }
+
+        /* Styling for main navigation links */
+        nav.w3-sidebar .w3-bar-block {
+            flex-grow: 1; /* Allows this section to fill the available space */
+            overflow: auto; /* Ensures scrollability */
+        }
+
         /* Sidebar text color styling */
         nav.w3-sidebar .w3-bar-block a {
             color: #C7B446; /* Theme color for text */
             background-color: #333333;
+            padding: 12px 16px; /* Increases padding, especially at the bottom */
+            border-bottom: 1px solid #444; /* Subtle separator if desired */
+            border-top: 1px solid #444; /* Subtle separator if desired */   
         }
+
         nav.w3-sidebar .w3-bar-block a:hover {
             background-color: #b6a237; /* Darker shade for hover effect */
-            color: #fff; /* Ensure text is still white on hover */
+            color: #fff; /* White text for contrast */
         }
+
         nav.w3-sidebar h3, nav.w3-sidebar h5 {
             color: #C7B446; /* Theme color for headings */
         }
+
+        /* Additional bottom elements styling */
+        .w3-container.bottom-elements {
+            margin-top: auto; /* Pushes it to the bottom */
+            padding: 12px 16px; /* Increases padding, especially at the bottom */
+            border-top: 1px solid #444; /* Separates from content above */
+        }
+
 
         /* Add padding on registration form */
         #form-ct {
@@ -79,6 +108,18 @@
         <a class="w3-bar-item w3-button w3-hover-white"><b>Our Team</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><b>Help and FAQ</b></a>
     </div>
+    <div class="w3-container bottom-elements">
+        <h5><b>Follow Us</b></h5>
+        <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook" style="width:24px; height:24px;"></a>
+        <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter" style="width:24px; height:24px;"></a>
+        <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram" style="width:24px; height:24px;"></a>
+    </div>
+    <div class="w3-container bottom-elements">
+        <h5><b>Contact Us</b></h5>
+        <h5><b>Email:</b> info@freecycling.com</h5>
+        <h5><b>Phone:</b> +123 456 7890</h5>
+    </div>
+
 </nav>
 
 <!-- Main content page -->
