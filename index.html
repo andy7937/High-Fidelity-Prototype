@@ -31,6 +31,26 @@
             height: auto;
             display: block;
         }
+        .w3-container-image .image-slider {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 300px; /* Adjust based on your design */
+        }
+        .w3-container-image .slider-image {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0; /* Start all images as invisible */
+            transition: opacity 2s ease-in-out; /* Smooth transition for opacity change */
+            display: block; /* Ensure images are in block to occupy the full container */
+        }
+
+        .w3-container-image .slider-image.active {
+            opacity: 1; /* Only the active image is fully visible */
+        }
         main.w3-container, main.w3-container-image {
             padding: 0;
         }
@@ -126,7 +146,11 @@
 <body>
     <!-- Image -->
     <main class="w3-container-image">
-        <img src="naturewalk.jpg" alt="Example of Freecycling" class="full-width-image">
+        <div class="image-slider">
+            <img src="image1.jpg" alt="Example of Freecycling" class="slider-image">
+            <img src="image2.jpg" alt="Second Example of Freecycling" class="slider-image">
+            <img src="image3.jpg" alt="Third Example of Freecycling" class="slider-image">
+        </div>
     </main>
 
     <!-- 2 boxes content -->
@@ -170,7 +194,9 @@
         </div>
     </div>
     <script src="script.js" defer></script>
+
     <script>
+        // Modal script
         document.getElementById('trigger-modal').onclick = function() {
             document.getElementById('modal').style.display = 'block';
         }
@@ -181,6 +207,25 @@
                 modal.style.display = "none";
             }
         }
+    </script>
+    <script>
+        // Image slider script
+        let currentIndex = 1;
+        const images = document.querySelectorAll('.slider-image');
+        const totalImages = images.length;
+
+        function cycleImages() {
+            const nextIndex = (currentIndex + 1) % totalImages; 
+            images[currentIndex].style.opacity = '0'; 
+            images[nextIndex].style.opacity = '1'; 
+            currentIndex = nextIndex;
+            setTimeout(cycleImages, 10000); 
+        }
+
+        // Start the cycle
+        window.onload = function() {
+            cycleImages();
+        };
     </script>
 </body>
 </html>
