@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freecycling!</title>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <style>
+        body {
+            color: #333; /* Dark grey for text, better for reading */
+            background: rgba(165, 199, 70, 0.20); /* very light green */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .brand-button {
+            background-color: #C7B446;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .brand-button:hover {
+            background-color: #b6a237; /* Slightly darker shade for hover state */
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            padding: 70px;
+        }
+        .header-logo {
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        .left-content, .right-content {
+            flex: 1;  /* Makes both divs take up equal space */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.4); /* Adjusts the transparency with RGBA */
+            margin: 60px; /* Adds margin around the content boxes */
+        }
+
+        /* registration link */
+        nav {
+            margin-left: auto; /* Pushes the nav to the right */
+        }
+        nav a {
+            color: #494949; /* Brand color for links */
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #494949; /* Slightly darker shade for hover state */
+            background-color: #C7B446;
+        }
+
+        
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        main.w3-container, main.w3-container-image {
+            padding: 0;
+        }
+        h2 {
+            color: #C7B446; /* Brand color for heading */
+        }
+        
+        /* Add padding on registration form */
+        #form-ct {
+        padding-bottom: 20px; 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="w3-container header-content">
+        <img src="freecycle-logo.png" alt="Freecycling Logo" class="header-logo">
+        <nav>
+            <a href="#" id="trigger-modal">Register</a>
+        </nav>
+    </header>
+    <main class="w3-container-image">
+        <img src="naturewalk.jpg" alt="Example of Freecycling" class="full-width-image">
+    </main>
+
+    <div class="content-container">
+        <div class="w3-container left-content">
+            <h2>Welcome to Freecycling!</h2>
+            <p>Follow us on our journey to create a new world of sustainability and community sharing.</p>
+        </div>
+        <div class="w3-container right-content">
+            <h2>TRY</h2>
+            <p>HGELENFLKN</p>
+        </div>
+    </div>
+
+    <!-- Modal for Registration Form -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container">
+                <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Registration Form</h2>
+            </header>
+            <div id="form-ct" class="w3-container">
+                <form>
+                    <div id="user-details">
+                        <input class="w3-input" type="text" placeholder="Given Name" name="givenName">
+                        <input class="w3-input" type="text" placeholder="Surname" name="surname">
+                        <input class="w3-input" type="text" placeholder="Username" name="username">
+                        <input class="w3-input" type="password" placeholder="Password" name="password">
+                    </div>
+                    <div id="address-details">
+                        <input class="w3-input" type="text" placeholder="Home Address" name="homeAddress">
+                        <input class="w3-input" type="text" placeholder="Work Address" name="workAddress">
+                    </div>
+                    <div id="contact-details">
+                        <input class="w3-input" type="text" placeholder="Mobile Number" name="mobileNumber">
+                        <input class="w3-input" type="email" placeholder="Email" name="email">
+                    </div>
+                    <button class="w3-button brand-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+    <script>
+        document.getElementById('trigger-modal').onclick = function() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('modal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
