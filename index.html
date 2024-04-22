@@ -34,6 +34,26 @@
             color: #C7B446; /* Brand color for heading */
         }
         
+        /* Sidebar styling */
+        nav.w3-sidebar {
+            background-color: #333333; /* Dark grey background */
+            z-index: 3;
+            width: 300px;
+            font-weight: bold;
+        }
+        /* Sidebar text color styling */
+        nav.w3-sidebar .w3-bar-block a {
+            color: #C7B446; /* Theme color for text */
+            background-color: #333333;
+        }
+        nav.w3-sidebar .w3-bar-block a:hover {
+            background-color: #b6a237; /* Darker shade for hover effect */
+            color: #fff; /* Ensure text is still white on hover */
+        }
+        nav.w3-sidebar h3, nav.w3-sidebar h5 {
+            color: #C7B446; /* Theme color for headings */
+        }
+
         /* Add padding on registration form */
         #form-ct {
         padding-bottom: 20px; 
@@ -43,13 +63,13 @@
 </head>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+<nav class="w3-sidebar"style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
     <div class="w3-container">
         <div style="display: flex; align-items: center;">
-            <h3 class="w3-xxxlarge w3-text-white"><b>FREE</b></h3>
+            <h5 class="w3-xxxlarge"><b>FREE</b></h5>
             <img src="freecycle-logo-no-word.png" style="max-width: 45%; margin-left: 10px;">
         </div>
-        <h3 class="w3-xxxlarge w3-text-white" style="text-align: left;"><b>CYCLING</b></h3>
+        <h5 class="w3-xxxlarge"><b>CYCLING</b></h5>
     </div>
     <div class="w3-bar-block">
         <a class="w3-bar-item w3-button w3-hover-white"><b>Login</b></a>
