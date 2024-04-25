@@ -7,43 +7,43 @@
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <style>
         body {
-            color: #333; /* Dark grey for text, better for reading */
-            background: rgba(165, 199, 70, 0.20); /* very light green */
+            color: #333; 
+            background: rgba(165, 199, 70, 0.20); 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .content-container {
             display: flex;
             justify-content: space-between; 
-            margin-left: 300px; /* Sidebar width */
+            margin-left: 300px; 
             font-family: 'Roboto', sans-serif;
             font-size: 17px;
         }
         .brand-button {
             background-color: #C7B446; /* Brand color for button */
-            color: #fff; /* White text for contrast */
+            color: #fff; 
         }
         .left-content, .right-content {
-            flex: 1;  /* Makes both divs take up equal space */
+            flex: 1;  
             padding: 20px;
-            background: rgba(255, 255, 255, 0.4); /* Adjusts the transparency with RGBA */
-            margin: 60px; /* Adds margin around the content boxes */
+            background: rgba(255, 255, 255, 0.4); 
+            margin: 60px;
         }
         
         .left-content-66 {
-            flex: 70%; /* text takes up 70% */
+            flex: 70%; 
             padding: 20px;
-            background: rgba(255, 255, 255, 0.4); /* Adjusts the transparency with RGBA */ 
+            background: rgba(255, 255, 255, 0.4); 
             margin: 60px;
             }
 
         .right-content-33 {
-            flex: 30%; /* image takes up 30% */
+            flex: 30%; 
             padding: 20px;
-            background: rgba(255, 255, 255, 0.4); /* Adjusts the transparency with RGBA */
+            background: rgba(255, 255, 255, 0.4); 
             margin: 60px;
             display: flex;
-            justify-content: center; /* Centers the image horizontally */
-            align-items: center; /* Centers the image vertically */
+            justify-content: center; 
+            align-items: center; 
         }
 
         .full-width-image {
@@ -55,7 +55,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            height: 300px; /* Adjust based on your design */
+            height: 300px;
         }
         .w3-container-image .slider-image {
             width: 100%;
@@ -63,67 +63,67 @@
             position: absolute;
             top: 0;
             left: 0;
-            opacity: 0; /* Start all images as invisible */
-            transition: opacity 2s ease-in-out; /* Smooth transition for opacity change */
-            display: block; /* Ensure images are in block to occupy the full container */
+            opacity: 0; 
+            transition: opacity 2s ease-in-out; 
+            display: block; 
         }
 
         .w3-container-image .slider-image.active {
-            opacity: 1; /* Only the active image is fully visible */
+            opacity: 1; 
         }
         main.w3-container, main.w3-container-image {
             padding: 0;
         }
         h2 {
-            color: #C7B446; /* Brand color for heading */
+            color: #C7B446; 
         }
         
         /* Sidebar container styling with flex display */
         nav.w3-sidebar {
             display: flex;
-            flex-direction: column; /* Stack children vertically */
-            justify-content: space-between; /* Space between top and bottom content */
-            height: 100vh; /* Full height of the viewport */
-            background-color: #333333; /* Dark grey background */
+            flex-direction: column; 
+            justify-content: space-between; 
+            height: 100vh;
+            background-color: #333333; 
             z-index: 3;
             width: 300px;
             font-weight: bold;
-            overflow: auto; /* Allows scrolling */
+            overflow: auto; 
         }
 
         /* Styling for main navigation links */
         nav.w3-sidebar .w3-bar-block {
-            flex-grow: 1; /* Allows this section to fill the available space */
-            overflow: auto; /* Ensures scrollability */
+            flex-grow: 1; 
+            overflow: auto; 
         }
 
         /* Sidebar text color styling */
         nav.w3-sidebar .w3-bar-block a {
-            color: #C7B446; /* Theme color for text */
+            color: #C7B446; 
             background-color: #333333;
-            padding: 12px 16px; /* Increases padding, especially at the bottom */
-            border-bottom: 1px solid #444; /* Subtle separator if desired */
-            border-top: 1px solid #444; /* Subtle separator if desired */   
+            padding: 12px 16px; 
+            border-bottom: 1px solid #444; 
+            border-top: 1px solid #444; 
         }
 
         nav.w3-sidebar .w3-bar-block a:hover {
-            background-color: #b6a237; /* Darker shade for hover effect */
-            color: #fff; /* White text for contrast */
+            background-color: #b6a237; 
+            color: #fff;
         }
 
         nav.w3-sidebar h3, nav.w3-sidebar h5 {
-            color: #C7B446; /* Theme color for headings */
+            color: #C7B446;
         }
 
         /* Additional bottom elements styling */
         .w3-container.bottom-elements {
-            margin-top: auto; /* Pushes it to the bottom */
-            padding: 12px 16px; /* Increases padding, especially at the bottom */
-            border-top: 1px solid #444; /* Separates from content above */
+            margin-top: auto; 
+            padding: 12px 16px; 
+            border-top: 1px solid #444; 
         }
 
 
-        /* Add padding on registration form */
+        /* customising the registration modal */
         #form-ct {
             padding-bottom: 20px; 
         }
@@ -136,13 +136,24 @@
             color: #333333;
         }
 
-        .w3-input{
-            background-color: #333333;
-            color : #ffffff;
+        .w3-input {
+            background-color: #333333; 
+            color: #ffffff;            
+            border: 2px solid #c0b990; 
+            padding: 8px 10px;         
+            margin-top: 10px;         
+            border-radius: 4px;        
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+            transition: all 0.3s;    
         }
+
+        .w3-input:focus {
+            border-color: #b6a237;     /* Changes border color when input is focused */
+            box-shadow: 0 0 8px rgba(183, 162, 55, 0.8); /* Enhances shadow when input is focused */
+        }
+
         .brand-button{
             margin-top: 10px;
-
         }
 
     </style>
