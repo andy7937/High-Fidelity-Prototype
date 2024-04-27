@@ -5,158 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freecycling!</title>
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
-    <style>
-        body {
-            color: #333; 
-            background: rgba(165, 199, 70, 0.20); 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .content-container {
-            display: flex;
-            justify-content: space-between; 
-            margin-left: 300px; 
-            font-family: 'Roboto', sans-serif;
-            font-size: 17px;
-        }
-        .brand-button {
-            background-color: #C7B446; /* Brand color for button */
-            color: #fff; 
-        }
-        .left-content, .right-content {
-            flex: 1;  
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.4); 
-            margin: 60px;
-        }
-        
-        .left-content-66 {
-            flex: 70%; 
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.4); 
-            margin: 60px;
-            }
-
-        .right-content-33 {
-            flex: 30%; 
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.4); 
-            margin: 60px;
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-        }
-
-        .full-width-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .w3-container-image .image-slider {
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-            height: 300px;
-        }
-        .w3-container-image .slider-image {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0; 
-            transition: opacity 2s ease-in-out; 
-            display: block; 
-        }
-
-        .w3-container-image .slider-image.active {
-            opacity: 1; 
-        }
-        main.w3-container, main.w3-container-image {
-            padding: 0;
-        }
-        h2 {
-            color: #C7B446; 
-        }
-        
-        /* Sidebar container styling with flex display */
-        nav.w3-sidebar {
-            display: flex;
-            flex-direction: column; 
-            justify-content: space-between; 
-            height: 100vh;
-            background-color: #333333; 
-            z-index: 3;
-            width: 300px;
-            font-weight: bold;
-            overflow: auto; 
-        }
-
-        /* Styling for main navigation links */
-        nav.w3-sidebar .w3-bar-block {
-            flex-grow: 1; 
-            overflow: auto; 
-        }
-
-        /* Sidebar text color styling */
-        nav.w3-sidebar .w3-bar-block a {
-            color: #C7B446; 
-            background-color: #333333;
-            padding: 12px 16px; 
-            border-bottom: 1px solid #444; 
-            border-top: 1px solid #444; 
-        }
-
-        nav.w3-sidebar .w3-bar-block a:hover {
-            background-color: #b6a237; 
-            color: #fff;
-        }
-
-        nav.w3-sidebar h3, nav.w3-sidebar h5 {
-            color: #C7B446;
-        }
-
-        /* Additional bottom elements styling */
-        .w3-container.bottom-elements {
-            margin-top: auto; 
-            padding: 12px 16px; 
-            border-top: 1px solid #444; 
-        }
-
-
-        /* customising the registration modal */
-        #form-ct {
-            padding-bottom: 20px; 
-        }
-        .w3-modal-content {
-            background-color: #333333;
-        }
-
-        .w3-modal-content header {
-            background-color: #333333;
-            color: #333333;
-        }
-
-        .w3-input {
-            background-color: #333333; 
-            color: #ffffff;            
-            border: 2px solid #c0b990; 
-            padding: 8px 10px;         
-            margin-top: 10px;         
-            border-radius: 4px;        
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-            transition: all 0.3s;    
-        }
-
-        .w3-input:focus {
-            border-color: #b6a237;     /* Changes border color when input is focused */
-            box-shadow: 0 0 8px rgba(183, 162, 55, 0.8); /* Enhances shadow when input is focused */
-        }
-
-        .brand-button{
-            margin-top: 10px;
-        }
-
-    </style>
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <!-- Sidebar/menu -->
@@ -173,6 +22,9 @@
         <a href="#" id="trigger-modal" class="w3-bar-item w3-button w3-hover-white"><b>Register</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><b>Home</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><b>About Our Company</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Take Action</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>News</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><b>Events</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><b>Our Team</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><b>Help and FAQ</b></a>
     </div>
@@ -205,7 +57,7 @@
     <div class="content-container">
         <div class="w3-container left-content">
             <h2><b>Our Goals and Values</b></h2>
-            <p>Welcome to Freecycling!, a thriving community-driven platform dedicated to promoting environmental sustainability through freecycling. 
+            <p>Welcome to Freecycling, a thriving community-driven platform dedicated to promoting environmental sustainability through freecycling. 
                 Founded on the principles of waste reduction and community empowerment, our mission is to connect individuals who are eager to find 
                 new homes for items they no longer need. At Freecycling!, we believe in the power of reusing and recycling goods to not only conserve 
                 resources but also foster a sense of community and mutual support. Our core values include sustainability, integrity, and inclusivity, 
@@ -214,7 +66,7 @@
         </div>
         <div class="w3-container right-content">
             <h2><b>Our Impact</b></h2>
-            <p>Since our inception, Freecycling! has facilitated the exchange of over half a million items, diverting substantial waste from landfills 
+            <p>Since our inception, Freecycling has facilitated the exchange of over half a million items, diverting substantial waste from landfills 
                 and promoting a greener planet. Our community's enthusiasm and active participation have been pivotal in spreading awareness about 
                 sustainable living. Looking forward, we aim to expand our reach by introducing more innovative features that make freecycling even more 
                 accessible and engaging. By enhancing our platform with user-friendly technology, we hope to inspire larger numbers of people to join 
@@ -226,9 +78,9 @@
 
     <!-- 1 box 1 photo content-->
     <div class="content-container">
-        <div class="w3-container left-content-66">
+        <div class="w3-container left-content-55">
             <h2><b>Our Community</b></h2>
-            <p>At Freecycling!, we are proud to have a diverse and vibrant community of members who share a common passion for sustainability and 
+            <p>At Freecycling, we are proud to have a diverse and vibrant community of members who share a common passion for sustainability and 
                 community building. Our members come from all walks of life, united by a commitment to reducing waste and promoting the reuse of 
                 resources. From families looking to declutter their homes to students seeking affordable essentials, our community is a melting pot 
                 of generosity and goodwill. By fostering connections and encouraging open communication, we strive to create a welcoming space where 
@@ -236,8 +88,8 @@
                 way we think about consumption and waste.
             </p>
         </div>
-        <div class="w3-container right-content-33">
-            <img src="community.jpg" alt="Community">
+        <div class="w3-container right-content-45">
+            <img src="community.jpg" alt="Community" style="width: 100%; height: auto;">
         </div>
     </div>
 
@@ -271,37 +123,5 @@
     </div>
     <script src="script.js" defer></script>
 
-    <script>
-        // Modal script
-        document.getElementById('trigger-modal').onclick = function() {
-            document.getElementById('modal').style.display = 'block';
-        }
-
-        window.onclick = function(event) {
-            var modal = document.getElementById('modal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        // Image slider script
-        let currentIndex = 1;
-        const images = document.querySelectorAll('.slider-image');
-        const totalImages = images.length;
-
-        function cycleImages() {
-            const nextIndex = (currentIndex + 1) % totalImages; 
-            images[currentIndex].style.opacity = '0'; 
-            images[nextIndex].style.opacity = '1'; 
-            currentIndex = nextIndex;
-            setTimeout(cycleImages, 10000); 
-        }
-
-        // Start the cycle
-        window.onload = function() {
-            cycleImages();
-        };
-    </script>
 </body>
 </html>
