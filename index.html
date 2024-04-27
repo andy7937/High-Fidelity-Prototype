@@ -9,6 +9,10 @@
 </head>
 
 <!-- Sidebar/menu -->
+<!-- Used design from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h
+    changed by usingg a different colour theming, adding a logo next to the header, adding a bottom div with a follow us/contact us section
+    and removed onclick/href that moves the side bar to its position, instead only adding href to the registration -->
+
 <nav class="w3-sidebar"style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
     <div class="w3-container">
         <div style="display: flex; align-items: center;">
@@ -39,7 +43,6 @@
         <h5><b>Email:</b> freecycling@gmail.com</h5>
         <h5><b>Phone:</b> +123 456 7890</h5>
     </div>
-
 </nav>
 
 <!-- Main content page -->
@@ -53,7 +56,7 @@
         </div>
     </main>
 
-    <!-- 2 boxes content -->
+    <!-- 2 boxes content (50/50) -->
     <div class="content-container">
         <div class="w3-container left-content">
             <h2><b>Our Goals and Values</b></h2>
@@ -76,7 +79,7 @@
         </div>
     </div>
 
-    <!-- 1 box 1 photo content-->
+    <!-- 1 box 1 photo content (55/45)-->
     <div class="content-container">
         <div class="w3-container left-content-55">
             <h2><b>Our Community</b></h2>
@@ -93,9 +96,12 @@
         </div>
     </div>
 
-    <!-- Modal for Registration Form -->
+    <!-- Modal for Registration Form 
+        Used design from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_mail&stacked=h
+        changed the colour theming, added divs for different sections of the classes, changed the w3-modal-content in
+        seperate css file to add extra styling such as highlighting the text boxes, making x box ligher grey, etc-->
     <div id="modal" class="w3-modal">
-        <div class="w3-modal-content">
+        <div class="w3-modal-content w3-animate-zoom">
             <header class="w3-container">
                 <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                 <h2><b>Registration Form</b></h2>
