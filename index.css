@@ -5,13 +5,20 @@ body {
 }
 .content-container {
     display: flex;
-    margin-left: 300px;
+    margin-left: 330px;
+    margin-right: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .brand-button {
     background-color: #C7B446; /* Brand color for button */
     color: #fff; 
+}
+.left-content, .right-content {
+    flex: 1;  
+    padding: 20px;
+    background: rgba(189, 197, 69, 0.2);
+    margin: 20px;
 }
 .left-content-55 {
     flex-basis: 55%; /* Explicitly sets the base size */
@@ -145,7 +152,7 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
     border-radius: 15px; 
 }
 .search-container {
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
     margin-left: 350px;
     margin-right: 50px;
@@ -195,7 +202,7 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
 }
 .search-container button:hover {
     background-color: rgb(133, 133, 133);
