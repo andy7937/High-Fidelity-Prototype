@@ -13,12 +13,6 @@ body {
     background-color: #C7B446; /* Brand color for button */
     color: #fff; 
 }
-.left-content, .right-content {
-    flex: 1;  
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.4); 
-    margin: 20px;
-}
 .left-content-55 {
     flex-basis: 55%; /* Explicitly sets the base size */
     padding: 20px;
@@ -32,8 +26,7 @@ body {
     margin: 20px;
     display: flex;
     justify-content: center; /* Centers the image horizontally */
-    align-items: ce
-    nter; /* Centers the image vertically */
+    align-items: center; /* Centers the image vertically */
 }
 .full-width-image {
     width: 100%;
@@ -118,6 +111,8 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
 }
 .w3-modal-content {
     background-color: #333333;
+    width:30%;
+    margin:auto;
 }
 .w3-modal-content header {
     background-color: #333333;
@@ -143,4 +138,51 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
 .w3-button.w3-display-topright{
     background-color: #464545;
     color: #C7B446;
+}
+
+.search-container {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 50px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    color: #7e7e7e;
+}
+.search-container input[type="text"], .search-container select{
+    padding: 10px;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: inherit;
+    background: none;
+    flex-grow: 1;
+}
+.search-container .fa {
+    padding: 10px;
+    color: #aaa;
+}
+.search-container .input-wrapper {
+    border-right: none; /* Removes the right border */
+    border-radius: 5px 0 0 5px; /* Only rounds the left corners */
+    flex-grow: 2; /* Takes twice the space of the dropdown */
+}
+.search-container .location-wrapper {
+    border-right: none; /* Removes the right border */
+    border-radius: 0; /* No rounding, appears as a part of one block */
+    flex-grow: 1; /* Takes one-third of the remaining space */
+}
+.search-container button {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+.search-container button:hover {
+    background-color: rgb(133, 133, 133);
 }

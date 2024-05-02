@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freecycling!</title>
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="w3.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
@@ -22,15 +23,14 @@
         <h5 class="w3-xxxlarge"><b>CYCLING!</b></h5>
     </div>
     <div class="w3-bar-block">
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Login</b></a>
-        <a href="#" id="trigger-modal" class="w3-bar-item w3-button w3-hover-white"><b>Register</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Home</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>About Our Company</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Take Action</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>News</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Events</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Our Team</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><b>Help and FAQ</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-sign-in"></i> <b>Login</b></a>
+        <a href="#" id="trigger-modal" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-user-plus"></i> <b>Register</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home"></i> <b>Home</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-plus-circle"></i> <b>List An Item</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-newspaper-o"></i> <b>News</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-calendar"></i> <b>Events</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-users"></i> <b>Our Team</b></a>
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-question-circle"></i> <b>Help and FAQ</b></a>
     </div>
     <div class="w3-container bottom-elements">
         <h5><b>Follow Us</b></h5>
@@ -61,34 +61,27 @@
         </div>
     </main>
 
-    <!-- 2 boxes content (50/50) -->
-    <div class="content-container">
-        <div class="w3-container left-content">
-            <h2><b>Our Goals and Values</b></h2>
-            <p>Welcome to Freecycling! a thriving community-driven platform dedicated to promoting environmental sustainability through freecycling!
-                Founded on the principles of waste reduction and community empowerment, our mission is to connect individuals who are eager to find 
-                new homes for items they no longer need. At Freecycling! we believe in the power of reusing and recycling goods to not only conserve 
-                resources but also foster a sense of community and mutual support. Our core values include sustainability, integrity, and inclusivity, 
-                guiding us to build a network that supports free exchange and environmental stewardship across neighborhoods globally.
-            </p>
-            <p style="color: #8b8531"><b>
-                READ MORE >
-            </b></p>
-        </div>
-        <div class="w3-container right-content">
-            <h2><b>Our Impact</b></h2>
-            <p>Since our inception, Freecycling! has facilitated the exchange of over half a million items, diverting substantial waste from landfills 
-                and promoting a greener planet. Our community's enthusiasm and active participation have been pivotal in spreading awareness about 
-                sustainable living. Looking forward, we aim to expand our reach by introducing more innovative features that make freecycling! even more 
-                accessible and engaging. By enhancing our platform with user-friendly technology, we hope to inspire larger numbers of people to join 
-                our cause, further amplifying our impact on waste reduction and resource conservation. Together, we are not just exchanging goods; we 
-                are building a movement towards a sustainable future.
-            </p>
-            <p style="color: #8b8531"><b>
-                READ MORE >
-            </b></p>
-        </div>
+
+<!-- Search bar section -->
+<div class="w3-container search-container">
+    <div class="input-wrapper">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Enter item to search for">
     </div>
+    <div class="location-wrapper">
+        <i class="fa fa-map-marker"></i>
+        <select>
+            <option value="selectlocation">Select location</option>
+            <option value="auckland">Auckland</option>
+            <option value="wellington">Wellington</option>
+            <option value="christchurch">Christchurch</option>
+            <option value="tauranga">Tauranga</option>
+            <option value="rotorua">Rotorua</option>
+        </select>
+    </div>
+    <button type="submit">Search</button>
+</div>
+
 
     <!-- 1 box 1 photo content (55/45)-->
     <!-- sources
