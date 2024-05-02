@@ -23,9 +23,9 @@
         <h5 class="w3-xxxlarge"><b>CYCLING!</b></h5>
     </div>
     <div class="w3-bar-block">
+        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home"></i> <b>Home</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-sign-in"></i> <b>Login</b></a>
         <a href="#" id="trigger-modal" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-user-plus"></i> <b>Register</b></a>
-        <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home"></i> <b>Home</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-plus-circle"></i> <b>List An Item</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-newspaper-o"></i> <b>News</b></a>
         <a class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-calendar"></i> <b>Events</b></a>
@@ -109,36 +109,37 @@
         Used design from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_mail&stacked=h
         changed the colour theming, added divs for different sections of the classes, changed the w3-modal-content in
         seperate css file to add extra styling such as highlighting the text boxes, making x box ligher grey, etc-->
-    <div id="modal" class="w3-modal">
-        <div class="w3-modal-content w3-animate-zoom">
-            <header class="w3-container">
-                <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <h2><b>Registration Form</b></h2>
-            </header>
-            <div id="form-ct" class="w3-container">
-                <form>
-                    <div id="user-details" style="margin-bottom: 20px">
-                        <h2 style="font-size:18px">User Details</h2>
-                        <input class="w3-input" type="text" placeholder="Given Name" name="givenName">
-                        <input class="w3-input" type="text" placeholder="Surname" name="surname">
-                        <input class="w3-input" type="text" placeholder="Username" name="username">
-                        <input class="w3-input" type="password" placeholder="Password" name="password">
-                    </div>
-                    <div id="address-details" style="margin-bottom: 20px">
-                        <h2 style="font-size:18px">Address Details</h2>
-                        <input class="w3-input" type="text" placeholder="Home Address" name="homeAddress">
-                        <input class="w3-input" type="text" placeholder="Work Address" name="workAddress">
-                    </div>
-                    <div id="contact-details" style="margin-bottom: 20px">
-                        <h2 style="font-size:18px">Contact Details</h2>
-                        <input class="w3-input" type="text" placeholder="Mobile Number" name="mobileNumber">
-                        <input class="w3-input" type="email" placeholder="Email" name="email">
-                    </div>
-                    <button class="w3-button brand-button">Submit</button>
-                </form>
-            </div>
+<div id="modal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <header class="w3-container">
+            <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h2><b>Registration Form</b></h2>
+        </header>
+        <div id="form-ct" class="w3-container">
+            <form>
+                <div id="user-details" style="margin-bottom: 20px">
+                    <h2 style="font-size:18px"><i class="fa fa-user"></i> User Details</h2>
+                    <input class="w3-input" type="text" placeholder="Given Name" name="givenName">
+                    <input class="w3-input" type="text" placeholder="Surname" name="surname">
+                    <input class="w3-input" type="text" placeholder="Username" name="username">
+                    <input class="w3-input" type="password" placeholder="Password" name="password">
+                </div>
+                <div id="address-details" style="margin-bottom: 20px">
+                    <h2 style="font-size:18px"><i class="fa fa-home"></i> Address Details</h2>
+                    <input class="w3-input" type="text" placeholder="Home Address" name="homeAddress">
+                    <input class="w3-input" type="text" placeholder="Work Address" name="workAddress">
+                </div>
+                <div id="contact-details" style="margin-bottom: 20px">
+                    <h2 style="font-size:18px"><i class="fa fa-phone"></i> Contact Details</h2>
+                    <input class="w3-input" type="text" placeholder="Mobile Number" name="mobileNumber">
+                    <input class="w3-input" type="email" placeholder="Email" name="email">
+                </div>
+                <button class="w3-button brand-button">Submit</button>
+            </form>
         </div>
     </div>
+</div>
+
     <script src="script.js" defer></script>
 
 </body>

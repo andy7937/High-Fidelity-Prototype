@@ -16,13 +16,13 @@ body {
 .left-content-55 {
     flex-basis: 55%; /* Explicitly sets the base size */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(189, 197, 69, 0.2);
     margin: 20px;
 }
 .right-content-45 {
     flex-basis: 45%; /* Explicitly sets the base size */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(189, 197, 69, 0.2);
     margin: 20px;
     display: flex;
     justify-content: center; /* Centers the image horizontally */
@@ -66,7 +66,7 @@ nav.w3-sidebar {
     flex-direction: column; 
     justify-content: space-between; 
     height: 100vh;
-    background-color: #333333; 
+    background-color: #3B3D1C; 
     z-index: 3;
     width: 300px;
     font-weight: bold;
@@ -82,7 +82,7 @@ nav.w3-sidebar .w3-bar-block {
 /* Sidebar text color styling */
 nav.w3-sidebar .w3-bar-block a {
     color: #C7B446; 
-    background-color: #333333;
+    background-color: #3B3D1C;
     padding: 12px 16px; 
     border-bottom: 1px solid #444; 
     border-top: 1px solid #444; 
@@ -113,10 +113,12 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
     background-color: #333333;
     width:30%;
     margin:auto;
+    border-radius: 15px; 
 }
 .w3-modal-content header {
     background-color: #333333;
     color: #333333;
+    border-radius: 15px; 
 }
 .w3-input {
     background-color: #333333; 
@@ -138,8 +140,8 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
 .w3-button.w3-display-topright{
     background-color: #464545;
     color: #C7B446;
+    border-radius: 15px; 
 }
-
 .search-container {
     padding: 20px;
     margin-top: 20px;
