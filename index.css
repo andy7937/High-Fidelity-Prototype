@@ -180,10 +180,21 @@ nav.w3-sidebar h3, nav.w3-sidebar h5 {
     color: #c9c9c9; 
 }
 .search-container .input-wrapper {
-    border-right: none; /* Removes the right border */
     border-radius: 5px 0 0 5px; /* Only rounds the left corners */
     flex-grow: 2; /* Takes twice the space of the dropdown */
     color: #c9c9c9;
+    position: relative; /* Required for pseudo-elements */
+    padding-right: 20px; /* Space before the divider */
+}
+.search-container .input-wrapper::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    right: 0; /* Align to the right edge of the input-wrapper */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Centering adjustment */
+    height: 80%; /* Adjust the height of the divider here */
+    width: 2px; /* Width of the divider */
+    background-color: #c9c9c9; /* Color of the divider */
 }
 .search-container input::placeholder {
     color: #c9c9c9; /* Set the placeholder text color to the theme color */
