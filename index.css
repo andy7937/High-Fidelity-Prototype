@@ -16,21 +16,21 @@ body {
 .left-content, .right-content {
     flex: 1;  
     padding: 20px;
-    background: rgba(189, 197, 69, 0.2);
+    background: rgba(255, 255, 255, 0.4); 
     margin: 20px;
     border-radius: 15px;
 }
 .left-content-55 {
     flex-basis: 55%; /* Explicitly sets the base size */
     padding: 20px;
-    background: rgba(189, 197, 69, 0.2);
+    background: rgba(255, 255, 255, 0.4); 
     margin: 20px;
     border-radius: 15px;
 }
 .right-content-45 {
     flex-basis: 45%; /* Explicitly sets the base size */
     padding: 20px;
-    background: rgba(189, 197, 69, 0.2);
+    background: rgba(255, 255, 255, 0.4); 
     margin: 20px;
     display: flex;
     justify-content: center; /* Centers the image horizontally */
